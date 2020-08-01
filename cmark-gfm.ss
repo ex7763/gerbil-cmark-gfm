@@ -84,7 +84,7 @@
 )
 
 
-(define (md->html str opt)
+(def (md->html str (opt CMARK_OPT_DEFAULT))
   (cmark-markdown-to-html str (string-length str) opt))
 
 (define (md->doc str opt)
